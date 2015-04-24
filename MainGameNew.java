@@ -1,55 +1,50 @@
-package thatNewWay;
-
 import java.util.Scanner;
 
-import puzzle_classes.LightCombination;
-
-public class MainGame {
+public class MainGameNew {
 
 	public static GameSaveAndLoad gs = new GameSaveAndLoad();
 	public static Scanner in = new Scanner(System.in);
-	public static String question;
+	public static String room = "1";
 	public static String userInput = "";
-
-
 
 	public static void main(String[] args) {
 
-		question = gs.loadGame();
+		// room = gs.loadGame();
 
 		// Game loop
 		while (true) {
 
 			if (userInput.equalsIgnoreCase("exit")) {
+				System.out.println("Exiting the game..");
 				System.exit(0);
 			} else {
-				switch (question) {
-
-				case "0":
-					System.out.println(Scenarios.INTRO);
-					question = "1";
-
-					break;
+				switch (room) {
 
 				case "1":
+					System.out.println(Senarios.SENARIO_1);
+					room = "1A";
+					break;
+
+				case "1A":
 
 					switch (userInput = in.next()) {
+
 					case "1":
-						question = "2";
+						room = "2";
 						break;
 
 					default:
 						System.out
 								.println("\nI don't understand your request.");
-						question = "0";
+						room = "1A";
 						break;
 					}
 
 					break;
 
 				case "2":
-					System.out.println(Scenarios.ROOM2);
-					question = "2A";
+					System.out.println(Senarios.SENARIO_2);
+					room = "2A";
 					// gs.saveGame("1A");
 					break;
 
@@ -58,28 +53,26 @@ public class MainGame {
 					switch (userInput = in.next()) {
 
 					case "1":
-						System.out
-								.println(Scenarios.ROOM3);
-						
-						LightCombination.solvingPuzzle(userInput = in.next());
-						question="1A";
+						System.out.println(Senarios.SENARIO_3);
 						break;
 
 					case "2":
-						System.out.println("\nThe right path is blocked right now, please pick another entrance.");
-						question = "2A";
+						System.out
+								.println("\nThe right path is blocked right now, please pick another entrance.");
+						room = "2A";
 						break;
 
 					case "3":
 
-						System.out.println("\nThe Straight path is blocked right now, please pick another entrance.");
-						question = "2A";
+						System.out
+								.println("\nThe straight path is blocked right now, please pick another entrance.");
+						room = "2A";
 						break;
 
 					default:
 						System.out
 								.println("\nI don't understand your request.");
-						question = "1A";
+						room = "2";
 						break;
 
 					}
