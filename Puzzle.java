@@ -1,5 +1,3 @@
-package puzzle_classes;
-
 import java.util.Scanner;
 
 /**
@@ -10,69 +8,77 @@ import java.util.Scanner;
  *          April 10, 2015
  *
  *
- *          This class – a pattern class for puzzle
+ *          This class ï¿½ a pattern class for puzzle
  *
- *          Purpose: – a puzzle for a text game.
+ *          Purpose: ï¿½ a puzzle for a text game.
  */
 
 // 7 descriptins and 7 methods
 
 public class Puzzle {
-	Player user = new Player("John");
+	// Player user = new Player("John");
 
-	public static final String LIGHT_COMBINATION = "match the color scheme straight on "
-			+ "Please separate your answers by comma";
+	public static final String LIGHT_COMBINATION = "\nMatch the color scheme "
+			+ "\nstraight on.\nPlease separate your answers by comma."
+			+ "\n[1] BLUE, BLUE, AQUA, GREEN, PURPLE, GREEN"
+			+ "\n[2] BLUE, AQUA, BLUE, GREEN, PURPLE, PURPLE";
 
-	public static final String ALIEN_NECKLACE = "Your task is to find all 3 pieces of a necklace.";
+	public static final String ALIEN_NECKLACE = "Your task is to find all 3 "
+			+ "\npieces of a necklace.\n[1] CONTINUE ON";
 
-	public static final String BUTTON_HANDLE = "You have a coice:"
-			+ "\n[1] push a button" + "\n[2] pull the handle.";
+	public static final String BUTTON_HANDLE = "You have a choice:"
+			+ "\n[1] PULL HANDLE\n[2] PUSH BUTTON";
 
-	public static final String ENTRANCE_CHOICE = "You are facing 4 doors choose an entrance . Beware only one door leads to the next chamber!"
-			+ "\n[1] First Door"
-			+ "\n[2] Second Door"
-			+ "\n[3] Third Door"
-			+ "\n[4] Fourth Door";
+	public static final String ENTRANCE_CHOICE = "You are facing four doors, "
+			+ "\nchoose an entrance. Beware only one door leads to the next chamber!"
+			+ "\n[1] DOOR ONE\n[2] DOOR TWO\n[3] DOOR THREE\n[4] DOOR FOUR";
 
-	public static final String MEMORIZATION = "Remember what was the answers to the questions earlier and write them on the cage) "
-			+ "\n[1]Dinornis robustus and Breath (WRONG you end up beingeaten by “Jack”)"
-			+ "\n[2]Smoke and Gravity (WRONG you end up being eaten by “Jack”)"
-			+ "\n[3]Breath and Smoke (Yay! The cage opens)";;
+	public static final String MEMORIZATION = "Remember what was the answers to "
+			+ "\nthe questions earlier and write them on the cage"
+			+ "\n[1] DINORNIS ROBUSTUS AND BREATH" // WRONG you end up being
+													// eaten by Jack
+			+ "\n[2] SMOKE AND GRAVITY" // WRONG you end up being eaten by Jack
+			+ "\n[3] BREATH AND SMOKE"; // Yay! The cage opens
 
-	public static final String RIDDLE = "Comes face to face with the light. The light shatters and the room begins to close in on the player. "
-			+ "\nThe pieces of light surround the player and then move in front of the player. "
-			+ "\nA message of light begins to appear and the message turns out to be a riddle. "
-			+ "\nI'm light as a feather, yet the strongest man can't hold me for much more than a minute. What am I? "
-			+ "\n[1]. Breath (moves on to the next riddle)"
-			+ "\n[2]. Gravity (WRONG so you die)"
-			+ "\n[3]. Ant (WRONG so you die)" + "\nenter 1,2, or3 for answer";
+	public static final String RIDDLE = "Comes face to face with the light. The "
+			+ "\nlight shatters and the room begins to close in on you. The pieces "
+			+ "\nof light surround you and then move in front of you. A message of "
+			+ "\nlight begins to appear and the message turns out to be a riddle. "
+			+ "\nI\'m light as a feather, yet the strongest man can't hold me for "
+			+ "\nmuch more than a minute. What am I?" + "\n[1] BREATH" // Moves
+																		// on to
+																		// the
+																		// next
+																		// riddle
+			+ "\n[2] GRAVITY" // WRONG so you die
+			+ "\n[3] ANT"; // WRONG so you die
 
-	public static final String RIDDLE2 = "WISE CHOICE!"
-			+ "Second Riddle: I am the black child of a white father, a wingless "
-			+ "\nbird, flying even to the clouds of heaven. I give birth to tears "
-			+ "\nof mourning in pupils that meet me, even though there is no "
-			+ "\ncause for grief, and at once on my birth I am dissolved into air. What am I?"
-			+ "\n[1]. Ghost (WRONG you die)"
-			+ "\n[2]. Smoke (Right! Continue on)"
-			+ "\n[3]. Dinornis robustus (WRONG you die)"
-			+ "\nenter 1,2, or3 for answer";
+	public static final String RIDDLE2 = "Wise choice! Second Riddle: I am the "
+			+ "\nblack child of a white father, a wingless bird, flying even to the "
+			+ "\nclouds of heaven. I give birth to tears of mourning in pupils that "
+			+ "\nmeet me, even though there is no cause for grief, and at once on "
+			+ "\nmy birth I am dissolved into air. What am I?" + "\n[1] GHOST" // WRONG
+																				// you
+																				// die
+			+ "\n[2] SMOKE" // Right! Continue on
+			+ "\n[3] DINORNIS ROBUSTUS"; // WRONG you die
 
-	public static final String TRIPLERIDDLE = "The alien informs the player that he is not there to eat him "
-			+ "\nbut will whenever the player gets a wrong answer.  "
-			+ "\nWhat lives in winter, dies in summer, and grows with its root upward? "
-			+ "\n[1]	Ice (WRONG) "
-			+ "\n[2]	An icicle (RIGHT) "
-			+ "\n[3]	A snowman (WRONG)";
+	public static final String TRIPLERIDDLE1 = "The alien informs you that he is "
+			+ "\nnot there to eat him but will whenever the player gets a wrong "
+			+ "\nanswer. What lives in winter, dies in summer, and grows with its "
+			+ "\nroot upward?" + "\n[1] ICE" // WRONG
+			+ "\n[2] AN ICICLE" // RIGHT
+			+ "\n[3] A SNOWMAN"; // WRONG
 
-	public static final String TRIPLERIDDLE2 = "What three letters mean 'stiff water'? "
-			+ "\n[1]	Ice (RIGHT)"
-			+ "\n[2]	Frozen (WRONG)"
-			+ "\n[3]	I.C.E (WRONG)";
+	public static final String TRIPLERIDDLE2 = "What three letters mean 'stiff water'?"
+			+ "\n[1] ICE" // RIGHT
+			+ "\n[2] FROZEN" // WRONG
+			+ "\n[3] I.C.E "; // WRONG
 
 	public static final String TRIPLERIDDLE3 = "What runs but never gets tired?"
-			+ "\n[1]	The roadrunner (WRONG)"
-			+ "\n[2]	An intergalactic space devil (WRONG)"
-			+ "\n[3]	Water (RIGHT)";
+			+ "\n[1] THE ROADRUNNER" // WRONG
+			+ "\n[2] AN INTERGALACTIC SPACE DEVIL" // WRONG
+			+ "\n[3] WATER"; // RIGHT
 
 	/**
 	 * Method: solvingPuzzle if the user enters the right combination of colors,
@@ -83,7 +89,7 @@ public class Puzzle {
 	public static boolean solvingLightCombination(String userInput) {
 		boolean solved = false;
 
-		if (userInput.equalsIgnoreCase("blue, aqua, green, purple")) {
+		if (userInput.equalsIgnoreCase("1")) {
 			System.out.println("The door opens. Well Done!");
 			solved = true;
 		} else {
@@ -99,15 +105,15 @@ public class Puzzle {
 	 * 
 	 * @return boolean
 	 **/
-	public boolean solvingButtonHandle(String userInput) {
+	public static boolean solvingButtonHandle(String userInput) {
 		boolean solved = false;
 		if (userInput.equalsIgnoreCase("1")) { // go to the room
 			solved = true;
-			System.out.println("procede to the room");
+			System.out.println("Proceed to the next room.");
 		} else if (userInput.equalsIgnoreCase("2")) {
 
 			// go to the other room
-			System.out.println("procede to the other room");
+			System.out.println("Nothing happens try something else.");
 			solved = true;
 		}
 		return solved;
@@ -127,7 +133,7 @@ public class Puzzle {
 			System.out.println("Puzzle solved!");
 			solved = true;
 		} else {
-			System.out.println("failed try again");
+			System.out.println("Failed try again.");
 			solved = false;
 		}
 		return solved;
@@ -140,14 +146,14 @@ public class Puzzle {
 	 * 
 	 * @return boolean
 	 **/
-	public boolean solvingMemorization(String userInput) {
+	public static boolean solvingMemorization(String userInput) {
 		boolean solved = false;
-		if (userInput.equalsIgnoreCase("1")) {
-			System.out.println("That is correct; the cage opens!");
+		if (userInput.equalsIgnoreCase("3")) {
+			System.out.println("That is correct, the cage opens!");
 			solved = true;
 		} else {
 			System.out.println("Jack grabs you and eats you.");
-			user.setHealthpoints(0);
+			// user.setHealthpoints(0);
 			solved = false;
 		}
 		return solved;
@@ -160,7 +166,7 @@ public class Puzzle {
 	 * 
 	 * @return boolean
 	 **/
-	public boolean solvingRiddle(String userInput) {
+	public static boolean solvingRiddle(String userInput) {
 		boolean solved = false;
 
 		if (userInput.equalsIgnoreCase("1")) // 1 is for breath
@@ -177,7 +183,7 @@ public class Puzzle {
 
 				System.out.println("Wrong Prepare to die!");
 
-				user.setHealthpoints(0);
+				// user.setHealthpoints(0);
 				solved = false;
 			}
 
@@ -186,7 +192,7 @@ public class Puzzle {
 
 			System.out.println("Wrong Prepare to die!");
 
-			user.setHealthpoints(0);
+			// user.setHealthpoints(0);
 			solved = false;
 		}
 		return solved;
@@ -198,7 +204,7 @@ public class Puzzle {
 	 * 
 	 * @return boolean
 	 **/
-	public boolean solvingTripleRiddle(String userInput) {
+	public static boolean solvingTripleRiddle(String userInput) {
 		boolean solved = false;
 		Scanner input = new Scanner(System.in);
 
@@ -221,7 +227,7 @@ public class Puzzle {
 
 					System.out.println("Wrong Prepare to die!");
 
-					user.setHealthpoints(0);
+					// user.setHealthpoints(0);
 					solved = false;
 				}
 			} else if (userInput.equalsIgnoreCase("2")
@@ -229,7 +235,7 @@ public class Puzzle {
 
 				System.out.println("Wrong Prepare to die!");
 
-				user.setHealthpoints(0);
+				// user.setHealthpoints(0);
 				solved = false;
 			}
 
@@ -238,98 +244,11 @@ public class Puzzle {
 
 			System.out.println("Wrong Prepare to die!");
 
-			user.setHealthpoints(0);
+			// user.setHealthpoints(0);
 			solved = false;
 		}
 
 		return solved;
 	}
 
-	/**
-	 * @return the user
-	 */
-	public Player getUser() {
-		return user;
-	}
-
-	/**
-	 * @param user the user to set
-	 */
-	public void setUser(Player user) {
-		this.user = user;
-	}
-
-	/**
-	 * @return the lightCombination
-	 */
-	public static String getLightCombination() {
-		return LIGHT_COMBINATION;
-	}
-
-	/**
-	 * @return the alienNecklace
-	 */
-	public static String getAlienNecklace() {
-		return ALIEN_NECKLACE;
-	}
-
-	/**
-	 * @return the buttonHandle
-	 */
-	public static String getButtonHandle() {
-		return BUTTON_HANDLE;
-	}
-
-	/**
-	 * @return the entranceChoice
-	 */
-	public static String getEntranceChoice() {
-		return ENTRANCE_CHOICE;
-	}
-
-	/**
-	 * @return the memorization
-	 */
-	public static String getMemorization() {
-		return MEMORIZATION;
-	}
-
-	/**
-	 * @return the riddle
-	 */
-	public static String getRiddle() {
-		return RIDDLE;
-	}
-
-	/**
-	 * @return the riddle2
-	 */
-	public static String getRiddle2() {
-		return RIDDLE2;
-	}
-
-	/**
-	 * @return the tripleriddle
-	 */
-	public static String getTripleriddle() {
-		return TRIPLERIDDLE;
-	}
-
-	/**
-	 * @return the tripleriddle2
-	 */
-	public static String getTripleriddle2() {
-		return TRIPLERIDDLE2;
-	}
-
-	/**
-	 * @return the tripleriddle3
-	 */
-	public static String getTripleriddle3() {
-		return TRIPLERIDDLE3;
-	}
-
-	
-	
-	
 }
