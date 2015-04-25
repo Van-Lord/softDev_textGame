@@ -4,9 +4,13 @@ import java.util.Scanner;
  * 
  * @author Alejandro Guzman
  * 
- * Spring 2015
+ * @version 1.0
+ *
+ *          Course : Software Development I Section 01 Spring 2015
+ *
+ *          Written: April 25, 2015
  * 
- * This class is a text based game.
+ *          This class is a text based game.
  *
  */
 public class MainGameNew {
@@ -20,14 +24,15 @@ public class MainGameNew {
 
 	public static void main(String[] args) {
 
-		//room = gs.loadGame();
+		// room = gs.loadGame();
 
+		System.out.println("WELCOME TO INTELLIGENT LIFE!");
 		System.out.println("Enter your name: ");
 		String name = in.nextLine();
 		p = new Player(name);
 		room = "Room_1";
 
-		//p = new Player("John");
+		// p = new Player("John");
 
 		// Game loop
 		while (running) {
@@ -37,7 +42,7 @@ public class MainGameNew {
 				System.out.println("Exiting the game..");
 				System.exit(0);
 			} else {
-				if(userInput.equalsIgnoreCase("help")) {
+				if (userInput.equalsIgnoreCase("help")) {
 					System.out.println("*****HELP*****");
 					System.out.println("\'help\': help menu");
 					System.out.println("\'stats\': player statistics");
@@ -934,7 +939,7 @@ public class MainGameNew {
 				 */
 				case ("Room_24"):
 					System.out.println("\n" + Scenarios.SCENARIO_24 + "\n");
-					System.out.println("End Game.");
+					System.out.println("END GAME.\nCONGRATULATIONS!!!");
 					running = false;
 					break;
 
