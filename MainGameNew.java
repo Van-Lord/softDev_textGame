@@ -1,3 +1,5 @@
+package IntelligentLife;
+
 import java.util.Scanner;
 
 /**
@@ -939,6 +941,7 @@ public class MainGameNew {
 				 */
 				case ("Room_24"):
 					System.out.println("\n" + Scenarios.SCENARIO_24 + "\n");
+				System.out.println("\n" + Scenarios.FINAL + "\n");
 					System.out.println("END GAME.\nCONGRATULATIONS!!!");
 					running = false;
 					break;
