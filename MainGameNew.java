@@ -1,5 +1,14 @@
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Alejandro Guzman
+ * 
+ * Spring 2015
+ * 
+ * This class is a text based game.
+ *
+ */
 public class MainGameNew {
 
 	public static GameSaveAndLoad gs = new GameSaveAndLoad();
