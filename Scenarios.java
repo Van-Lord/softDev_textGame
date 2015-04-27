@@ -1,4 +1,3 @@
-package IntelligentLife;
 public class Scenarios {
 
 	public static final String SCENARIO_1 = "A group of travelers make their way to "
@@ -223,17 +222,20 @@ public class Scenarios {
 			+ "\nwith different colors of plasma. ";
 	// exit the hive
 	// open the box and get the medkit
-	/*public static final String SCENARIO_25 = "You exit the room to find youself "
-			+ "\nback outside the spaceship where you began your searching. You "
-			+ "\nrealize the dangers of the planet and go back to the entrance of "
-			+ "\nthe cave to get the other crew members. ";
-	// pic another entrance
-	// or if it is the last cjoice go to finall.
-*/
-	public static final String FINAL = "You exit the room to find yourself "
-			+ "\nback outside the spaceship where you began the searching. It all seems like a nightmare; "
-			+ "\nyou realize the dangers of the planet and get on the spaceShip without the other crew members "
-			+ "\n'No one could have suvived in this madness' you think. You and and the crew members left on the space ship exit the planet. Never to return!  ";
+	/*
+	 * public static final String SCENARIO_25 =
+	 * "You exit the room to find youself " +
+	 * "\nback outside the spaceship where you began your searching. You " +
+	 * "\nrealize the dangers of the planet and go back to the entrance of " +
+	 * "\nthe cave to get the other crew members. "; // pic another entrance //
+	 * or if it is the last cjoice go to finall.
+	 */
+	public static final String FINAL = "You exit the room to find yourself back "
+			+ "\noutside the spaceship where you began the searching. It all seems "
+			+ "\nlike a nightmare you realize the dangers of the planet and get on "
+			+ "\nthe spaceship without the other crew members No one could have "
+			+ "\nsuvived in this madness you think. You and and the crew members "
+			+ "\nleft on the space ship exit the planet. Never to return!  ";
 
 	public static final String SCENARIO_27 = "";
 	public static final String SCENARIO_28 = "";

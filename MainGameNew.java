@@ -1,5 +1,3 @@
-package IntelligentLife;
-
 import java.util.Scanner;
 
 /**
@@ -32,6 +30,7 @@ public class MainGameNew {
 		System.out.println("Enter your name: ");
 		String name = in.nextLine();
 		p = new Player(name);
+		System.out.println("You can type \'help\' \'stats\' \'inv\' \'exit\'");
 		room = "Room_1";
 
 		// p = new Player("John");
@@ -941,8 +940,9 @@ public class MainGameNew {
 				 */
 				case ("Room_24"):
 					System.out.println("\n" + Scenarios.SCENARIO_24 + "\n");
-				System.out.println("\n" + Scenarios.FINAL + "\n");
-					System.out.println("END GAME.\nCONGRATULATIONS!!!");
+					System.out.println("\n" + Scenarios.FINAL + "\n");
+					System.out.println("END GAME.\nCONGRATULATIONS "
+							+ p.getName() + " !!!");
 					running = false;
 					break;
 
